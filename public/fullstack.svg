@@ -1,0 +1,162 @@
+<svg viewBox="0 0 600 800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f7ff" />
+      <stop offset="100%" stop-color="#e6e9ff" />
+    </linearGradient>
+    <linearGradient id="primaryGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c3aed" />
+      <stop offset="100%" stop-color="#6d28d9" />
+    </linearGradient>
+    <linearGradient id="frontendGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#2563eb" />
+    </linearGradient>
+    <linearGradient id="backendGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="dbGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <linearGradient id="mobileGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ec4899" />
+      <stop offset="100%" stop-color="#db2777" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="800" fill="url(#bgGradient)" />
+  
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <path d="M50 0 V800 M100 0 V800 M150 0 V800 M200 0 V800 M250 0 V800 M300 0 V800 M350 0 V800 M400 0 V800 M450 0 V800 M500 0 V800 M550 0 V800" stroke="#6366f1" stroke-width="1" />
+    <path d="M0 50 H600 M0 100 H600 M0 150 H600 M0 200 H600 M0 250 H600 M0 300 H600 M0 350 H600 M0 400 H600 M0 450 H600 M0 500 H600 M0 550 H600 M0 600 H600 M0 650 H600 M0 700 H600 M0 750 H600" stroke="#6366f1" stroke-width="1" />
+  </g>
+
+  <!-- Frontend Element (Browser) -->
+  <g transform="translate(80, 120)">
+    <!-- Browser window -->
+    <rect x="0" y="0" width="200" height="160" rx="6" fill="white" stroke="#e2e8f0" stroke-width="2" filter="drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.1))" />
+    
+    <!-- Browser header -->
+    <rect x="0" y="0" width="200" height="30" rx="6" fill="url(#frontendGradient)" />
+    <rect x="0" y="15" width="200" height="15" fill="url(#frontendGradient)" />
+    
+    <!-- Browser buttons -->
+    <circle cx="15" cy="15" r="5" fill="#f87171" />
+    <circle cx="35" cy="15" r="5" fill="#fbbf24" />
+    <circle cx="55" cy="15" r="5" fill="#34d399" />
+    
+    <!-- Browser content - UI elements -->
+    <rect x="15" y="45" width="170" height="20" rx="3" fill="#f1f5f9" />
+    <rect x="15" y="75" width="120" height="10" rx="2" fill="#e2e8f0" />
+    <rect x="15" y="95" width="170" height="10" rx="2" fill="#e2e8f0" />
+    <rect x="15" y="115" width="90" height="10" rx="2" fill="#e2e8f0" />
+    <rect x="15" y="135" width="60" height="15" rx="3" fill="url(#primaryGradient)" />
+    
+    <!-- Code elements -->
+    <text x="35" y="58" font-family="monospace" font-size="10" fill="#64748b">&lt;div class="app"&gt;</text>
+  </g>
+
+  <!-- Backend Elements (Server) -->
+  <g transform="translate(320, 180)">
+    <!-- Server rack -->
+    <rect x="0" y="0" width="200" height="160" rx="6" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2" filter="drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.1))" />
+    
+    <!-- Server units -->
+    <rect x="20" y="20" width="160" height="30" rx="2" fill="url(#backendGradient)" />
+    <rect x="20" y="65" width="160" height="30" rx="2" fill="url(#backendGradient)" opacity="0.85" />
+    <rect x="20" y="110" width="160" height="30" rx="2" fill="url(#backendGradient)" opacity="0.7" />
+    
+    <!-- Server details -->
+    <circle cx="35" cy="35" r="5" fill="#ffffff" />
+    <circle cx="35" cy="80" r="5" fill="#ffffff" />
+    <circle cx="35" cy="125" r="5" fill="#ffffff" />
+    
+    <!-- Server lights -->
+    <circle cx="180" cy="30" r="3" fill="#22c55e" />
+    <circle cx="180" cy="40" r="3" fill="#22c55e" />
+    <circle cx="180" cy="75" r="3" fill="#22c55e" />
+    <circle cx="180" cy="85" r="3" fill="#f59e0b" />
+    <circle cx="180" cy="120" r="3" fill="#22c55e" />
+    <circle cx="180" cy="130" r="3" fill="#22c55e" />
+  </g>
+
+  <!-- Database Element -->
+  <g transform="translate(150, 350)">
+    <!-- Cylinder top -->
+    <ellipse cx="75" cy="20" rx="75" ry="20" fill="url(#dbGradient)" />
+    
+    <!-- Cylinder body -->
+    <rect x="0" y="20" width="150" height="110" fill="url(#dbGradient)" />
+    
+    <!-- Cylinder bottom -->
+    <ellipse cx="75" cy="130" rx="75" ry="20" fill="url(#dbGradient)" opacity="0.85" />
+    
+    <!-- Database details -->
+    <ellipse cx="75" cy="20" rx="60" ry="12" fill="white" opacity="0.2" />
+    <rect x="15" y="50" width="120" height="10" rx="2" fill="white" opacity="0.1" />
+    <rect x="15" y="70" width="120" height="10" rx="2" fill="white" opacity="0.1" />
+    <rect x="15" y="90" width="120" height="10" rx="2" fill="white" opacity="0.1" />
+  </g>
+
+  <!-- Mobile App Element -->
+  <g transform="translate(370, 380)">
+    <!-- Phone outline -->
+    <rect x="0" y="0" width="100" height="180" rx="12" fill="white" stroke="#e2e8f0" stroke-width="3" filter="drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.1))" />
+    
+    <!-- Phone screen -->
+    <rect x="8" y="18" width="84" height="144" rx="2" fill="url(#mobileGradient)" opacity="0.9" />
+    
+    <!-- Phone details -->
+    <circle cx="50" cy="175" r="8" stroke="white" stroke-width="2" fill="none" />
+    <rect x="38" y="9" width="24" height="3" rx="1.5" fill="#64748b" />
+    
+    <!-- App elements -->
+    <rect x="18" y="28" width="64" height="12" rx="6" fill="white" opacity="0.2" />
+    <rect x="18" y="50" width="64" height="64" rx="8" fill="white" opacity="0.2" />
+    <rect x="18" y="124" width="28" height="28" rx="4" fill="white" opacity="0.2" />
+    <rect x="54" y="124" width="28" height="28" rx="4" fill="white" opacity="0.2" />
+  </g>
+
+  <!-- Connection Lines -->
+  <g stroke="url(#primaryGradient)" stroke-width="2" fill="none" stroke-dasharray="5,5">
+    <path d="M180,200 C230,220 270,220 320,220" />
+    <path d="M220,280 C250,310 250,310 220,350" />
+    <path d="M380,280 C380,310 380,310 370,380" />
+    <path d="M250,440 C300,450 320,450 370,460" />
+  </g>
+
+  <!-- Floating Code Elements -->
+  <g transform="translate(90, 550)" opacity="0.7">
+    <rect x="0" y="0" width="180" height="140" rx="6" fill="white" stroke="#e2e8f0" stroke-width="1" />
+    <text x="10" y="25" font-family="monospace" font-size="12" fill="#6366f1">function api() {</text>
+    <text x="20" y="45" font-family="monospace" font-size="12" fill="#64748b">  return {</text>
+    <text x="30" y="65" font-family="monospace" font-size="12" fill="#64748b">    data: fetch(),</text>
+    <text x="30" y="85" font-family="monospace" font-size="12" fill="#64748b">    status: 200</text>
+    <text x="20" y="105" font-family="monospace" font-size="12" fill="#64748b">  }</text>
+    <text x="10" y="125" font-family="monospace" font-size="12" fill="#6366f1">}</text>
+  </g>
+
+  <g transform="translate(330, 550)" opacity="0.7">
+    <rect x="0" y="0" width="180" height="140" rx="6" fill="white" stroke="#e2e8f0" stroke-width="1" />
+    <text x="10" y="25" font-family="monospace" font-size="12" fill="#6366f1">.container {</text>
+    <text x="20" y="45" font-family="monospace" font-size="12" fill="#64748b">  display: flex;</text>
+    <text x="20" y="65" font-family="monospace" font-size="12" fill="#64748b">  align-items: center;</text>
+    <text x="20" y="85" font-family="monospace" font-size="12" fill="#64748b">  justify-content: center;</text>
+    <text x="20" y="105" font-family="monospace" font-size="12" fill="#64748b">  height: 100vh;</text>
+    <text x="10" y="125" font-family="monospace" font-size="12" fill="#6366f1">}</text>
+  </g>
+
+  <!-- Cloud Elements -->
+  <g transform="translate(200, 50)">
+    <path d="M25,60 Q0,60 0,37.5 Q0,15 25,15 Q25,0 47.5,0 Q70,0 70,15 Q95,15 95,37.5 Q95,60 70,60 Q70,75 47.5,75 Q25,75 25,60" fill="white" opacity="0.7" filter="drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.1))" />
+    <path d="M200,40 Q175,40 175,17.5 Q175,-5 200,-5 Q200,-20 222.5,-20 Q245,-20 245,-5 Q270,-5 270,17.5 Q270,40 245,40 Q245,55 222.5,55 Q200,55 200,40" fill="white" opacity="0.5" filter="drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.1))" />
+  </g>
+
+  <!-- Title -->
+  <text x="300" y="750" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#1e293b" text-anchor="middle">Full-Stack Development</text>
+</svg>

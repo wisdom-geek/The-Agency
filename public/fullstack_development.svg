@@ -1,0 +1,182 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with subtle gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="100%" stop-color="#f1f5f9" />
+    </linearGradient>
+    
+    <!-- Code window gradient -->
+    <linearGradient id="windowGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    
+    <!-- Primary color gradient -->
+    <linearGradient id="primaryGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#6d28d9" />
+    </linearGradient>
+    
+    <!-- Secondary color gradient -->
+    <linearGradient id="secondaryGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#2563eb" />
+    </linearGradient>
+    
+    <!-- Backend server gradient -->
+    <linearGradient id="serverGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    
+    <!-- Mobile gradient -->
+    <linearGradient id="mobileGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    
+    <!-- Database gradient -->
+    <linearGradient id="dbGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#4f46e5" />
+    </linearGradient>
+    
+    <!-- Cloud gradient -->
+    <linearGradient id="cloudGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9ca3af" />
+      <stop offset="100%" stop-color="#6b7280" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bgGradient)" />
+  
+  <!-- Subtle grid pattern -->
+  <path d="M0 50 H800 M0 100 H800 M0 150 H800 M0 200 H800 M0 250 H800 M0 300 H800 M0 350 H800 M0 400 H800 M0 450 H800 M0 500 H800 M0 550 H800" 
+        stroke="#e2e8f0" stroke-width="0.5" />
+  <path d="M50 0 V600 M100 0 V600 M150 0 V600 M200 0 V600 M250 0 V600 M300 0 V600 M350 0 V600 M400 0 V600 M450 0 V600 M500 0 V600 M550 0 V600 M600 0 V600 M650 0 V600 M700 0 V600 M750 0 V600" 
+        stroke="#e2e8f0" stroke-width="0.5" />
+
+  <!-- Frontend Section -->
+  <g transform="translate(120, 120)">
+    <!-- Browser Window -->
+    <rect x="0" y="0" width="220" height="160" rx="8" fill="url(#windowGradient)" filter="drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.1))" />
+    
+    <!-- Browser Top Bar -->
+    <rect x="0" y="0" width="220" height="24" rx="8" ry="0" fill="#334155" />
+    <circle cx="16" cy="12" r="4" fill="#ef4444" />
+    <circle cx="36" cy="12" r="4" fill="#f59e0b" />
+    <circle cx="56" cy="12" r="4" fill="#10b981" />
+    
+    <!-- URL Bar -->
+    <rect x="76" y="8" width="130" height="8" rx="4" fill="#475569" />
+    
+    <!-- CSS Content -->
+    <rect x="10" y="34" width="80" height="8" rx="2" fill="#94a3b8" opacity="0.7" />
+    <rect x="10" y="50" width="60" height="6" rx="2" fill="#94a3b8" opacity="0.5" />
+    <rect x="30" y="65" width="80" height="6" rx="2" fill="#94a3b8" opacity="0.5" />
+    <rect x="30" y="80" width="70" height="6" rx="2" fill="#94a3b8" opacity="0.5" />
+    <rect x="10" y="95" width="40" height="6" rx="2" fill="#94a3b8" opacity="0.5" />
+    
+    <!-- HTML Content -->
+    <rect x="120" y="34" width="90" height="70" rx="2" fill="#475569" opacity="0.3" />
+    <rect x="130" y="44" width="70" height="8" rx="2" fill="url(#primaryGradient)" opacity="0.7" />
+    <rect x="130" y="60" width="50" height="8" rx="2" fill="white" opacity="0.5" />
+    <rect x="130" y="76" width="60" height="8" rx="2" fill="white" opacity="0.5" />
+    <rect x="130" y="92" width="40" height="8" rx="4" fill="url(#primaryGradient)" opacity="0.7" />
+    
+    <!-- Frontend Label -->
+    <text x="110" y="140" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#334155" text-anchor="middle">Frontend</text>
+  </g>
+  
+  <!-- Backend Section -->
+  <g transform="translate(500, 140)">
+    <!-- Server Rack -->
+    <rect x="0" y="0" width="140" height="180" rx="6" fill="#1e293b" filter="drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.1))" />
+    
+    <!-- Server Units -->
+    <rect x="10" y="15" width="120" height="25" rx="2" fill="url(#serverGradient)" />
+    <rect x="20" y="22" width="20" height="4" rx="1" fill="#e2e8f0" opacity="0.7" />
+    <rect x="50" y="22" width="20" height="4" rx="1" fill="#e2e8f0" opacity="0.7" />
+    <circle cx="105" cy="25" r="4" fill="#22c55e" />
+    
+    <rect x="10" y="50" width="120" height="25" rx="2" fill="url(#dbGradient)" />
+    <rect x="20" y="57" width="20" height="4" rx="1" fill="#e2e8f0" opacity="0.7" />
+    <rect x="50" y="57" width="20" height="4" rx="1" fill="#e2e8f0" opacity="0.7" />
+    <circle cx="105" cy="60" r="4" fill="#22c55e" />
+    
+    <rect x="10" y="85" width="120" height="25" rx="2" fill="#334155" />
+    <rect x="20" y="92" width="20" height="4" rx="1" fill="#e2e8f0" opacity="0.7" />
+    <rect x="50" y="92" width="20" height="4" rx="1" fill="#e2e8f0" opacity="0.7" />
+    <circle cx="105" cy="95" r="4" fill="#f59e0b" />
+    
+    <rect x="10" y="120" width="120" height="25" rx="2" fill="url(#cloudGradient)" />
+    <rect x="20" y="127" width="20" height="4" rx="1" fill="#e2e8f0" opacity="0.7" />
+    <rect x="50" y="127" width="20" height="4" rx="1" fill="#e2e8f0" opacity="0.7" />
+    <circle cx="105" cy="130" r="4" fill="#22c55e" />
+    
+    <!-- Backend Label -->
+    <text x="70" y="165" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#334155" text-anchor="middle">Backend</text>
+  </g>
+  
+  <!-- Mobile App Section -->
+  <g transform="translate(350, 380)">
+    <!-- Mobile Phone -->
+    <rect x="0" y="0" width="100" height="180" rx="12" fill="#0f172a" filter="drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.1))" />
+    <rect x="5" y="5" width="90" height="170" rx="8" fill="#1e293b" />
+    <rect x="10" y="15" width="80" height="140" rx="4" fill="#334155" />
+    
+    <!-- Mobile UI Elements -->
+    <rect x="20" y="25" width="60" height="8" rx="2" fill="url(#mobileGradient)" />
+    <rect x="20" y="40" width="40" height="4" rx="1" fill="#94a3b8" opacity="0.7" />
+    <rect x="20" y="50" width="60" height="20" rx="2" fill="url(#mobileGradient)" opacity="0.2" />
+    <rect x="20" y="80" width="60" height="20" rx="2" fill="url(#mobileGradient)" opacity="0.2" />
+    <rect x="20" y="110" width="60" height="20" rx="2" fill="url(#mobileGradient)" opacity="0.2" />
+    
+    <!-- Bottom button -->
+    <circle cx="50" cy="165" r="8" fill="#334155" stroke="#94a3b8" stroke-width="1" />
+    
+    <!-- Mobile Label -->
+    <text x="50" y="200" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#334155" text-anchor="middle">Mobile</text>
+  </g>
+  
+  <!-- DevOps & CI/CD Section -->
+  <g transform="translate(130, 330)">
+    <!-- Cloud -->
+    <ellipse cx="80" cy="40" rx="50" ry="30" fill="url(#cloudGradient)" opacity="0.7" filter="drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.1))" />
+    <ellipse cx="50" cy="40" rx="30" ry="20" fill="url(#cloudGradient)" opacity="0.8" />
+    <ellipse cx="110" cy="40" rx="30" ry="20" fill="url(#cloudGradient)" opacity="0.8" />
+    
+    <!-- DevOps Cycle -->
+    <circle cx="80" cy="110" r="40" fill="none" stroke="url(#secondaryGradient)" stroke-width="4" stroke-dasharray="8 3" />
+    <path d="M80,70 L90,90 L70,90 Z" fill="url(#secondaryGradient)" />
+    <path d="M120,110 L100,120 L100,100 Z" fill="url(#secondaryGradient)" />
+    <path d="M80,150 L70,130 L90,130 Z" fill="url(#secondaryGradient)" />
+    <path d="M40,110 L60,100 L60,120 Z" fill="url(#secondaryGradient)" />
+    
+    <!-- DevOps Label -->
+    <text x="80" y="170" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#334155" text-anchor="middle">DevOps & CI/CD</text>
+  </g>
+  
+  <!-- Connecting Lines -->
+  <g stroke="url(#primaryGradient)" stroke-width="2" stroke-dasharray="5 2" fill="none">
+    <!-- Frontend to Backend -->
+    <path d="M340,180 C400,140 440,160 500,180" />
+    
+    <!-- Backend to Mobile -->
+    <path d="M540,320 C500,370 450,380 400,380" />
+    
+    <!-- Mobile to Frontend -->
+    <path d="M350,380 C300,320 250,300 220,280" />
+    
+    <!-- DevOps to All -->
+    <path d="M210,330 C250,250 280,230 340,200" />
+    <path d="M210,350 C300,420 340,410 350,400" />
+    <path d="M210,380 C300,440 500,400 550,320" />
+  </g>
+  
+  <!-- Main Title -->
+  <text x="400" y="60" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#334155" text-anchor="middle">Full-Stack Development</text>
+  <text x="400" y="90" font-family="Arial, sans-serif" font-size="16" fill="#64748b" text-anchor="middle">End-to-end scalable solutions</text>
+</svg>

@@ -1,0 +1,168 @@
+<svg viewBox="0 0 600 800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8f9ff" />
+      <stop offset="100%" stop-color="#eaecff" />
+    </linearGradient>
+    <linearGradient id="primaryGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c3aed" />
+      <stop offset="100%" stop-color="#6d28d9" />
+    </linearGradient>
+    <linearGradient id="colorGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ec4899" />
+      <stop offset="100%" stop-color="#db2777" />
+    </linearGradient>
+    <linearGradient id="colorGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#2563eb" />
+    </linearGradient>
+    <linearGradient id="colorGradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="colorGradient4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-opacity="0.2" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="800" fill="url(#bgGradient)" />
+  
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <path d="M50 0 V800 M100 0 V800 M150 0 V800 M200 0 V800 M250 0 V800 M300 0 V800 M350 0 V800 M400 0 V800 M450 0 V800 M500 0 V800 M550 0 V800" stroke="#6366f1" stroke-width="1" />
+    <path d="M0 50 H600 M0 100 H600 M0 150 H600 M0 200 H600 M0 250 H600 M0 300 H600 M0 350 H600 M0 400 H600 M0 450 H600 M0 500 H600 M0 550 H600 M0 600 H600 M0 650 H600 M0 700 H600 M0 750 H600" stroke="#6366f1" stroke-width="1" />
+  </g>
+
+  <!-- Main Design Board -->
+  <g transform="translate(100, 100)">
+    <!-- Design Canvas -->
+    <rect x="0" y="0" width="400" height="300" rx="8" fill="white" filter="url(#shadow)" />
+    
+    <!-- Design Grid -->
+    <g opacity="0.1">
+      <path d="M40 0 V300 M80 0 V300 M120 0 V300 M160 0 V300 M200 0 V300 M240 0 V300 M280 0 V300 M320 0 V300 M360 0 V300" stroke="#6366f1" stroke-width="1" />
+      <path d="M0 30 H400 M0 60 H400 M0 90 H400 M0 120 H400 M0 150 H400 M0 180 H400 M0 210 H400 M0 240 H400 M0 270 H400" stroke="#6366f1" stroke-width="1" />
+    </g>
+    
+    <!-- UI Components -->
+    <!-- Header -->
+    <rect x="20" y="20" width="360" height="50" rx="6" fill="url(#primaryGradient)" />
+    <circle cx="45" cy="45" r="15" fill="white" opacity="0.7" />
+    <rect x="80" y="35" width="120" height="20" rx="4" fill="white" opacity="0.3" />
+    <rect x="320" y="35" width="40" height="20" rx="10" fill="white" opacity="0.3" />
+    
+    <!-- Main Content -->
+    <rect x="20" y="90" width="230" height="180" rx="6" fill="#f8fafc" />
+    <rect x="40" y="110" width="190" height="20" rx="2" fill="#e2e8f0" />
+    <rect x="40" y="140" width="150" height="10" rx="2" fill="#e2e8f0" />
+    <rect x="40" y="160" width="190" height="10" rx="2" fill="#e2e8f0" />
+    <rect x="40" y="180" width="130" height="10" rx="2" fill="#e2e8f0" />
+    <rect x="40" y="210" width="80" height="30" rx="4" fill="url(#primaryGradient)" />
+    
+    <!-- Sidebar -->
+    <rect x="270" y="90" width="110" height="180" rx="6" fill="#f8fafc" />
+    <rect x="290" y="110" width="70" height="20" rx="2" fill="#e2e8f0" />
+    <rect x="290" y="140" width="70" height="40" rx="2" fill="#e2e8f0" />
+    <rect x="290" y="190" width="70" height="60" rx="2" fill="#e2e8f0" />
+  </g>
+
+  <!-- Color Palette -->
+  <g transform="translate(80, 430)">
+    <rect x="0" y="0" width="440" height="80" rx="8" fill="white" filter="url(#shadow)" />
+    <text x="20" y="30" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1e293b">Color Palette</text>
+    
+    <circle cx="90" cy="50" r="20" fill="url(#colorGradient1)" />
+    <circle cx="150" cy="50" r="20" fill="url(#colorGradient2)" />
+    <circle cx="210" cy="50" r="20" fill="url(#primaryGradient)" />
+    <circle cx="270" cy="50" r="20" fill="url(#colorGradient3)" />
+    <circle cx="330" cy="50" r="20" fill="url(#colorGradient4)" />
+    <circle cx="390" cy="50" r="20" fill="#1e293b" />
+    
+    <line x1="90" y1="30" x2="390" y2="30" stroke="#e2e8f0" stroke-width="1" />
+  </g>
+
+  <!-- Design Elements -->
+  <!-- Wireframe -->
+  <g transform="translate(80, 540)">
+    <rect x="0" y="0" width="200" height="150" rx="8" fill="white" filter="url(#shadow)" />
+    <text x="20" y="30" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1e293b">Wireframe</text>
+    
+    <!-- Simple wireframe -->
+    <rect x="20" y="50" width="160" height="20" rx="2" stroke="#94a3b8" stroke-width="2" fill="none" />
+    <rect x="20" y="80" width="100" height="50" rx="2" stroke="#94a3b8" stroke-width="2" fill="none" />
+    <rect x="130" y="80" width="50" height="50" rx="2" stroke="#94a3b8" stroke-width="2" fill="none" />
+    <line x1="40" y1="60" x2="140" y2="60" stroke="#94a3b8" stroke-width="2" />
+  </g>
+
+  <!-- User Flow -->
+  <g transform="translate(320, 540)">
+    <rect x="0" y="0" width="200" height="150" rx="8" fill="white" filter="url(#shadow)" />
+    <text x="20" y="30" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1e293b">User Flow</text>
+    
+    <!-- Simple flow chart -->
+    <rect x="30" y="50" width="60" height="30" rx="15" fill="url(#colorGradient2)" opacity="0.8" />
+    <rect x="110" y="50" width="60" height="30" rx="15" fill="url(#colorGradient2)" opacity="0.8" />
+    <rect x="70" y="100" width="60" height="30" rx="15" fill="url(#colorGradient2)" opacity="0.8" />
+    
+    <line x1="90" y1="65" x2="110" y2="65" stroke="#3b82f6" stroke-width="2" />
+    <line x1="60" y1="80" x2="70" y2="100" stroke="#3b82f6" stroke-width="2" />
+    <line x1="140" y1="80" x2="130" y2="100" stroke="#3b82f6" stroke-width="2" />
+  </g>
+
+  <!-- Design Tools -->
+  <g transform="translate(450, 150)">
+    <!-- Design tools panel -->
+    <rect x="0" y="0" width="50" height="300" rx="8" fill="white" filter="url(#shadow)" />
+    
+    <!-- Tool icons -->
+    <circle cx="25" cy="30" r="15" fill="url(#colorGradient1)" opacity="0.7" />
+    <circle cx="25" cy="70" r="15" fill="url(#colorGradient2)" opacity="0.7" />
+    <circle cx="25" cy="110" r="15" fill="url(#colorGradient3)" opacity="0.7" />
+    <circle cx="25" cy="150" r="15" fill="url(#colorGradient4)" opacity="0.7" />
+    <circle cx="25" cy="190" r="15" fill="url(#primaryGradient)" opacity="0.7" />
+    <circle cx="25" cy="230" r="15" fill="#1e293b" opacity="0.7" />
+    <circle cx="25" cy="270" r="15" fill="#94a3b8" opacity="0.7" />
+    
+    <!-- Tool icons -->
+    <rect x="18" y="23" width="14" height="14" rx="2" fill="white" />
+    <line x1="18" y1="70" x2="32" y2="70" stroke="white" stroke-width="2" />
+    <circle cx="25" cy="110" r="7" fill="white" />
+    <path d="M20,190 L30,190 L25,180 Z" fill="white" />
+    <rect x="20" y="230" width="10" height="5" fill="white" />
+  </g>
+
+  <!-- UX Elements - User personas -->
+  <g transform="translate(80, 250)" opacity="0.3">
+    <path d="M0,0 C20,-20 40,-20 60,0 C80,20 120,20 140,0 C160,-20 180,-20 200,0" stroke="url(#colorGradient1)" stroke-width="3" fill="none" />
+  </g>
+
+  <!-- Designer Drawing -->
+  <g transform="translate(30, 100)">
+    <path d="M0,200 C20,160 40,190 20,230 C0,270 40,290 60,250" stroke="url(#primaryGradient)" stroke-width="3" fill="none" opacity="0.5" />
+  </g>
+
+  <!-- Testing Flow Chart -->
+  <g transform="translate(520, 320)" opacity="0.5">
+    <circle cx="25" cy="0" r="20" fill="url(#colorGradient3)" />
+    <circle cx="0" cy="60" r="20" fill="url(#colorGradient3)" />
+    <circle cx="50" cy="60" r="20" fill="url(#colorGradient3)" />
+    <line x1="25" y1="20" x2="0" y2="40" stroke="url(#colorGradient3)" stroke-width="2" />
+    <line x1="25" y1="20" x2="50" y2="40" stroke="url(#colorGradient3)" stroke-width="2" />
+  </g>
+
+  <!-- Stylized Text Elements -->
+  <g transform="translate(50, 50)" opacity="0.4">
+    <rect x="0" y="0" width="80" height="20" rx="4" fill="url(#colorGradient2)" />
+    <rect x="0" y="30" width="60" height="10" rx="2" fill="url(#colorGradient2)" />
+    <rect x="0" y="50" width="40" height="10" rx="2" fill="url(#colorGradient2)" />
+  </g>
+
+  <!-- Title -->
+  <text x="300" y="750" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#1e293b" text-anchor="middle">UI/UX Design</text>
+</svg>
